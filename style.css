@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+
+body {
+  background-size: 200% 200%;
+
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header {
+  text-align: center;
+  margin: 20px 0;
+}
+
+header img {
+  width: 200px;
+  height: auto;
+}
+nav {
+  margin: 20px 0;
+}
+nav h2 {
+  display: inline;
+  margin: 0 15px;
+  cursor: pointer;
+}
+.slide-in-bck-center {
+  width: 250px;
+  height: auto;
+  border-radius: 5px;
+  margin: 20px 0;
+}
+
+.textogrande {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.apresentacao {
+  max-width: 800px;
+  margin: 20px;
+  text-align: justify;
+}
+
+.developer {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 20px 0;
+}
+
+.sobremim {
+  max-width: 800px;
+  margin: 20px 0;
+  text-align: justify;
+}
+
+.embaixo {
+  color: black;
+  padding: 20px;
+  margin: 20px 0;
+  max-width: 800px;
+  border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+  .slide-top {
+    width: 200px;
+  }
+
+  .embaixo {
+    padding: 10px;
+  }
+}
+.slide-in-bck-center {
+  animation: slide-in-bck-center 7s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+@keyframes slide-in-bck-center {
+  0% {
+    transform: translateZ(600px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateZ(0);
+    opacity: 1;
+  }
+}
+.tracking-in-expand {
+  animation: 0.7s cubic-bezier(0.215, 0.61, 0.355, 1) both;
+}
+@keyframes tracking-in-expand {
+  0% {
+    letter-spacing: -0.5em;
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+  }
+}
